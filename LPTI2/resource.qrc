@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>cadasequip.cpp</file>
+        <file>cadasequip.h</file>
+        <file>cadaslab.cpp</file>
+        <file>cadaslab.h</file>
+        <file>cadasuser.cpp</file>
+        <file>cadasuser.h</file>
+        <file>login.cpp</file>
+        <file>login.h</file>
+        <file>main.cpp</file>
+        <file>menucadas.cpp</file>
+        <file>menucadas.h</file>
+        <file>menuprinc.cpp</file>
+        <file>menuprinc.h</file>
+        <file>recsenha.cpp</file>
+        <file>recsenha.h</file>
+        <file>sobre.cpp</file>
+        <file>sobre.h</file>
+        <file>img/voltar.png</file>
+    </qresource>
+</RCC>
