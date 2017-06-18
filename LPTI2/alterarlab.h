@@ -18,6 +18,10 @@ public:
 private slots:
      void on_pushButton_4_clicked();
 
+     void on_setCodigo_textChanged();
+
+     void on_btn_alterar_clicked();
+
 private:
     Ui::AlterarLab *ui;
 };

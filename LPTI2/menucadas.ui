@@ -45,7 +45,7 @@
     </font>
    </property>
    <property name="text">
-    <string>CADASTRO</string>
+    <string>CADASTRAR</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

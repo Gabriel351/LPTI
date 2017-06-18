@@ -91,7 +91,7 @@
     </font>
    </property>
    <property name="text">
-    <string>CADASTRO</string>
+    <string>CADASTRAR</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -137,6 +137,9 @@
       <width>301</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
     </property>
     <property name="placeholderText">
      <string>Prof. Responsável</string>
@@ -206,7 +209,23 @@
      <string>Localização</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lab_setDescricao">
+   <widget class="QLabel" name="fail">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>250</y>
+      <width>321</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(217, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="lab_setDescricao">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -215,11 +234,8 @@
       <height>81</height>
      </rect>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-    </property>
     <property name="placeholderText">
-     <string>Descricão</string>
+     <string>Descrição</string>
     </property>
    </widget>
   </widget>

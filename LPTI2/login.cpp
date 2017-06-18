@@ -14,14 +14,15 @@ Login::Login(QWidget *parent) :
 {
     ui->setupUi(this);
     QSqlDatabase db;
-    if(!(db.open())) {
+    if(!(db.isOpen())) {
         db = QSqlDatabase::addDatabase("QMYSQL");
         db.setHostName("127.0.0.1");
         db.setDatabaseName("mydb");
         db.setPassword("root");
         db.setUserName("root");
+        db.open();
     }
-    if(db.open()) {
+    if(db.isOpen()) {
         ui->bd_connection->setText("Conectado ao banco de dados");
     } else {
         ui->bd_connection->setText("Falha ao conectar no banco de dados");
@@ -53,10 +54,7 @@ void Login::on_iniciar_clicked()
     QSqlQuery query;
     QString siape = ui->siape->text();
     QString senha = ui->senha->text();
-    //query.prepare("INSERT INTO usuario (SIAPE,Senha)" "VALUES (:SIAPE,:Senha)");
-    //query.bindValue(":SIAPE", 1001);
-    //query.bindValue(":name", "Thad Beaumo
-    query.prepare("select SIAPE,Senha from usuario where SIAPE='"+siape+"' and Senha='"+senha+"'");
+    query.prepare("select SIAPE,Senha from usuario where SIAPE='"+siape+"' and Senha='"+senha+"' ");
     if (query.exec()) {
         int count = 0;
         while(query.next()) {
@@ -70,6 +68,8 @@ void Login::on_iniciar_clicked()
         } else {
             ui->falha_conexao->setText("siape ou senha inválido");
         }
+    } else {
+        ui->falha_conexao->setText("cansei");
     }
 }
 

@@ -130,7 +130,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Incluir</string>
+    <string>Cadastrar</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">

@@ -35,7 +35,7 @@
    <property name="title">
     <string>Laboratório</string>
    </property>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="setCodigo">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -48,7 +48,7 @@
      <string>Código</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit">
+   <widget class="QTextEdit" name="setDescricao">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -61,7 +61,7 @@
      <string>Descrição</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="setProfessor">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -74,7 +74,7 @@
      <string>Prof. Responsável</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="setTecnico">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -87,11 +87,11 @@
      <string>Técnico do Laboratório</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="btn_alterar">
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>260</y>
+      <y>280</y>
       <width>131</width>
       <height>31</height>
      </rect>
@@ -106,7 +106,7 @@
      <string>Confirmar</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_4">
+   <widget class="QLineEdit" name="setLocalizacao">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -117,6 +117,22 @@
     </property>
     <property name="placeholderText">
      <string>Localização</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fail">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>250</y>
+      <width>321</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(217, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>
